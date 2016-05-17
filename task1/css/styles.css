@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+body {
+  color: #333;
+}
+
+header {
+  width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  height: 50px;
+}
+
+nav > ul {
+  height: 100%;
+}
+
+nav > ul > li {
+  width: 20%;
+  height: 100%;
+  line-height: 50px;
+  text-align: center;
+  background: #fafafa;
+  float: left;
+  cursor: default;
+}
+
+.mega {
+  display: none;
+}
