@@ -11,6 +11,7 @@ header {
 
 nav {
   height: 50px;
+  position: relative;
 }
 
 nav > ul {
@@ -27,6 +28,20 @@ nav > ul > li {
   cursor: default;
 }
 
+nav > ul > li:hover {
+  background: #f5f5f5;
+}
+
+nav > ul > li:hover .mega {
+  display: block;
+}
+
 .mega {
+  width: 100%;
+  background: #fafafa;
+  border: 6px solid #ccc;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
   display: none;
 }
