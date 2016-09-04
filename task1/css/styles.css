@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+.clearfix:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+body {
+  font-size: 16px;
+}
+
+header {
+  width: 1000px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+header h1 {
+  width: 180px;
+  height: 50px;
+  margin-right: 10px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+  vertical-align: center;
+  background: #f0f0f0;
+}
+
+header > p {
+  display: inline-block;
+}
+
+nav {
+  height: 50px;
+  margin-bottom: 50px;
+  background: #f0f0f0;
+}
+
+nav > ul {
+  width: 1000px;
+  margin: 0 auto;
+  font-size: 0;
+  position: relative;
+}
+
+nav > ul > li {
+  width: 20%;
+  height: 50px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+  cursor: default;;
+}
+
+nav > ul > li:hover {
+  background: #f3f3f3;
+}
+
+nav .mega {
+  width: 100%;
+  padding: 30px 30px 60px 30px;
+  border: 3px solid  #ccc;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  background: #fff;
+  display: none;
+}
+
+nav .mega:before {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  top: -19px;
+  left: 90px;
+  border: 8px solid transparent;
+  border-bottom-color: #ccc;
+}
+
+nav li:nth-child(2) .mega:before {
+  left: 290px;
+}
+
+nav li:nth-child(3) .mega:before {
+  left: 490px;
+}
+
+nav li:nth-child(4) .mega:before {
+  left: 690px;
+}
+
+nav li:nth-child(5) .mega:before {
+  left: 890px;
+}
+
+nav > ul > li:hover .mega {
+  display: block;
+}
+
+nav .mega .left {
+  width: 634px;
+}
+
+nav .mega .left ul {
+  margin-bottom: -34px;
+}
+
+nav .mega .left li {
+  width: 300px;
+  margin: 0 34px 34px 0;
+  float: left;
+}
+
+nav .mega .left li a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav .mega .left li img,
+nav .mega .left li span {
+  text-align: left;
+  display: block;
+}
+
+nav .mega .left li:hover img,
+nav .mega .left li:hover span {
+  opacity: .7;
+}
+
+nav .mega .left li span {
+  position: relative;
+  padding-left: 12px;
+}
+
+nav .mega .left li span:before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 3px;
+  margin: auto;
+  border-right: 2px solid  #333;
+  border-bottom: 2px solid  #333;
+  transform: rotate(-45deg);
+}
+
+nav .mega .left li:nth-child(even) {
+  margin-right: 0;
+}
+
+nav .mega .right {
+  width: 300px;
+  padding: 30px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #f3f3f3;
+}
+
+nav .mega .right li a {
+  margin-bottom: 10px;
+  padding: 0 0 10px 12px ;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px dashed  #ccc;
+  position: relative;
+}
+
+nav .mega .right li a:hover {
+  opacity: .7;
+}
+
+nav .mega .right li a:before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  top: 24px;
+  left: 3px;
+  border-right: 2px solid  #333;
+  border-bottom: 2px solid  #333;
+  transform: rotate(-45deg);
+}
+
+nav .mega .fixed {
+  width: 300px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  font-size: 0;
+}
+
+nav .mega .fixed a {
+  width: 140px;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 10px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+nav .mega .fixed a:hover {
+  opacity: .7;
+}
+
+nav .mega .fixed a:last-child {
+  margin-right: 0;
+}
+
+nav .mega .fixed a:before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 8px;
+  margin: auto;
+  border-right: 2px solid  #fff;
+  border-bottom: 2px solid  #fff;
+  transform: rotate(-45deg);
+}
+
+.content {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.content h2 {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 1px solid  #ccc;
+}
+
+.content p {
+  word-wrap: break-word;
+}
